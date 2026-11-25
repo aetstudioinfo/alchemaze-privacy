@@ -1,54 +1,57 @@
 <!doctype html>
-<html lang="tr"><head>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AlcheMaze – Gizlilik Politikası / Privacy Policy</title>
+<title>AlcheMaze – Privacy Policy / Gizlilik Politikası</title>
 <style>
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px 48px;line-height:1.6;color:#1d2030;background:#fafafc}
-h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8em}hr{margin:3em 0;border:none;border-top:1px solid #dde}
-a{color:#3b5bdb}.muted{color:#667;font-size:.9rem}
+:root{--bg:#fafafc;--fg:#1d2030;--muted:#667;--line:#dde;--accent:#3b5bdb;--card:#fff;--soft:#eef1ff}
+@media (prefers-color-scheme:dark){:root{--bg:#14161f;--fg:#e8eaf3;--muted:#9aa0b8;--line:#2a2e40;--accent:#8fa8ff;--card:#1b1e2b;--soft:#222740}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65;color:var(--fg);background:var(--bg)}
+.bar{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:8px;padding:10px 12px;background:var(--card);border-bottom:1px solid var(--line)}
+.bar button{font:inherit;font-weight:600;font-size:.9rem;padding:6px 20px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--fg);cursor:pointer}
+.bar button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+main{max-width:780px;margin:0 auto;padding:20px 16px 56px}
+h1{font-size:1.6rem;margin:.3em 0}
+h2{font-size:1.12rem;margin:1.9em 0 .4em}
+a{color:var(--accent)}
+.meta{color:var(--muted);font-size:.9rem}
+.box{background:var(--soft);border-left:4px solid var(--accent);padding:10px 14px;border-radius:6px;margin:14px 0}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.93rem;background:var(--card)}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.lang{display:none}.lang.on{display:block}
+footer{margin-top:3em;color:var(--muted);font-size:.85rem;text-align:center}
 </style>
+<noscript><style>.lang{display:block!important;margin-bottom:3em}.bar{display:none}</style></noscript>
 </head>
 <body>
-<p class="muted">AET Studio · Son güncelleme / Last updated: 3 Kasım 2026 · <a href="#en">English</a></p>
+<nav class="bar" aria-label="Language">
+<button type="button" id="b-en" aria-pressed="true">English</button>
+<button type="button" id="b-tr" aria-pressed="false">Türkçe</button>
+</nav>
+<main>
 
-<h1>AlcheMaze Gizlilik Politikası</h1>
-<p>Bu politika, AET Studio tarafından geliştirilen AlcheMaze: Merge Tower Defense (com.aetstudio.alchemaze) Android oyununun hangi verileri nasıl işlediğini açıklar. AET Studio'nun kendi sunucusu yoktur; oyun adınız, e-posta adresiniz gibi kişisel bilgileri toplamaz ve bize hiçbir oyun verisi göndermez. Oyunun kullandığı üçüncü taraf hizmetlerin tamamı Google'a aittir: isteğe bağlı ödüllü reklamlar için Google AdMob, isteğe bağlı giriş ve bulut kaydı için Google Play Games ve uygulama içi satın almalar için Google Play.</p>
-
-<h2>1. Cihazınızda saklanan veriler</h2>
-<p>Oyun ilerlemeniz (açılan haritalar ve yıldızlar, Kor, Altın, Elmas, yetenek ağacı, kartlar, sandıklar, ayarlar) cihazınızda, oyunun kendi depolama alanında saklanır. Google Play Games ile giriş yaparsanız ilerlemenizin bir kopyası Google'ın bulut kaydında da tutulur (bkz. 2). Cihazınızda Android'in otomatik yedeklemesi açıksa bu veriler Android tarafından Google hesabınıza yedeklenebilir; bu Google'ın hizmetidir ve AET Studio bu yedeğe erişemez.</p>
-
-<h2>2. Google Play Games (isteğe bağlı)</h2>
-<p>Google Play Games ile giriş yaparsanız oyun, ilerlemenizi cihazlar arasında taşımak için bulut kaydını ve varsa başarımlar ile skor tablolarını Google Play Games Hizmetleri üzerinden kullanır. Bu hizmet Google tarafından sağlanır: oyuncu profiliniz (oyuncu adı, avatar, oyuncu kimliği), bulut kaydınız, başarımlarınız ve skorlarınız Google'da saklanır ve Google'ın <a href="https://policies.google.com/privacy">gizlilik politikasına</a> tabidir. Skorlarınız, Play Games görünürlük ayarlarınıza göre diğer oyunculara görünebilir. E-posta adresiniz bizimle paylaşılmaz. Giriş yapmadan da oyunun tamamı oynanabilir.</p>
-
-<h2>3. Reklamlar</h2>
-<p>Oyunda açılır (ara) reklam yoktur. Yalnızca sizin bir butona dokunarak seçtiğiniz anda izlenen ödüllü reklamlar vardır (ör. maç sonu Kor x2, sandık süresini kısaltma) ve bunlar Google AdMob aracılığıyla gösterilir. AdMob reklam kimliği, cihaz bilgileri, yaklaşık konum (IP adresinden), reklam etkileşimleri ve teşhis verilerini toplayabilir. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki oyunculardan reklam göstermeden önce izin istenir; tercihinizi <em>Ayarlar → Reklam gizliliği</em> bölümünden değiştirebilirsiniz. Ayrıntılar: <a href="https://policies.google.com/technologies/partner-sites">Google'ın verileri nasıl kullandığı</a>.</p>
-
-<h2>4. Uygulama içi satın almalar</h2>
-<p>Elmas paketleri gibi uygulama içi satın almalar Google Play üzerinden yapılır. Ödeme bilgilerinizi göremeyiz veya saklamayız; oyun yalnızca satın alımın geçerli olduğunu Google Play'den doğrular ve satın aldığınız ürünü hesabınıza ekler. Satın almalar ve iadeler Google Play'in koşullarına tabidir.</p>
-
-<h2>5. Sorun raporları</h2>
-<p>Oyun çöker veya donarsa teknik bir rapor (hata kaydı, Android sürümü, cihaz modeli) cihazınıza kaydedilir. Rapor bir sonraki açılışta size gösterilir ve yalnızca siz <em>Paylaş</em>'a dokunursanız, seçtiğiniz uygulamayla gönderilir. Google Play, Android'in çökme istatistiklerini kimliğinizle ilişkilendirmeden geliştiriciye toplu olarak gösterebilir (Android vitals).</p>
-
-<h2>6. İzinler</h2>
-<p>Oyun internet erişimini (reklamlar, Play Games ve satın almalar için), reklam kimliği iznini (AdMob için) ve titreşim iznini (Ayarlar'dan kapatılabilir) kullanır. Oyun internetsiz de oynanabilir; o zaman reklam teklifleri, bulut kaydı ve satın almalar kullanılamaz.</p>
-
-<h2>7. Verilerinizi silme</h2>
-<p>Cihazdaki oyun verileri oyunu kaldırdığınızda veya uygulama verilerini temizlediğinizde silinir. Play Games verilerinizi (bulut kaydı, başarımlar, skorlar) Google Play Games uygulamasının ayarlarından veya Google hesabınızdan silebilirsiniz. Reklam kimliğinizi Android ayarlarından sıfırlayabilir veya silebilirsiniz. AET Studio sizinle ilgili hiçbir veri saklamaz; sorularınız için aşağıdaki adrese yazabilirsiniz.</p>
-
-<h2>8. Çocuklar</h2>
-<p>AlcheMaze 13 yaşın altındaki çocuklara yönelik değildir ve bilerek onlardan veri toplamaz.</p>
-
-<h2>9. Değişiklikler</h2>
-<p>Bu politika değiştiğinde (ör. yeni bir hizmet eklendiğinde) güncel hali bu sayfada yayınlanır ve tarih güncellenir.</p>
-
-<h2>10. İletişim</h2>
-<p>Sorularınız için: <a href="mailto:aetstudioinfo@gmail.com">aetstudioinfo@gmail.com</a></p>
-
-<hr id="en">
-
+<!-- ============================== ENGLISH ============================== -->
+<section class="lang on" id="en" lang="en">
+<p class="meta">AET Studio · Last updated: 25 November 2026</p>
 <h1>AlcheMaze Privacy Policy</h1>
 <p>This policy explains how AlcheMaze: Merge Tower Defense (com.aetstudio.alchemaze), an Android game by AET Studio, handles your data. AET Studio runs no servers of its own; the game does not collect personal information such as your name or email address and sends no game data to us. All third-party services used by the game are provided by Google: Google AdMob for optional rewarded ads, Google Play Games for optional sign-in and cloud save, and Google Play for in-app purchases.</p>
+
+<div class="box"><strong>In short:</strong> your progress stays on your device. There is no account, no analytics and no tracking of our own. Ads, sign-in and purchases are handled by Google.</div>
+
+<h2>Data collected (summary)</h2>
+<div class="wrap"><table>
+<tr><th>Data</th><th>Purpose</th><th>Handled by</th><th>Legal basis (GDPR)</th></tr>
+<tr><td>Game progress and settings</td><td>Running the game</td><td>Your device (Google cloud save if signed in to Play Games)</td><td>Contract (providing the game)</td></tr>
+<tr><td>Play Games profile, cloud save</td><td>Optional sign-in and saves across devices</td><td>Google Play Games</td><td>Consent (you choose to sign in)</td></tr>
+<tr><td>Advertising ID, device info, approximate location</td><td>Optional rewarded ads</td><td>Google AdMob</td><td>Consent (EEA, UK, Switzerland: asked before ads)</td></tr>
+<tr><td>Purchase history</td><td>Ad-free and gem purchases</td><td>Google Play</td><td>Contract</td></tr>
+<tr><td>Reminder settings</td><td>Optional notifications</td><td>Your device only</td><td>Consent (notification permission)</td></tr>
+<tr><td>Problem report</td><td>Fixing bugs, only if you share it</td><td>Your device</td><td>Consent (you tap Share)</td></tr>
+</table></div>
+<p>We do not collect your name, email address, contacts, photos, precise location or any payment details, and we do not sell your personal information.</p>
 
 <h2>1. Data stored on your device</h2>
 <p>Your progress (unlocked maps and stars, Embers, Gold, Gems, skill tree, cards, chests, settings) is stored on your device, in the game's private storage. If you sign in with Google Play Games, a copy of your progress is also kept in Google's cloud save (see 2). If Android's automatic backup is turned on, Android may back this data up to your Google account; that is a Google service and AET Studio cannot access it.</p>
@@ -57,27 +60,133 @@ a{color:#3b5bdb}.muted{color:#667;font-size:.9rem}
 <p>If you sign in with Google Play Games, the game uses Google Play Games Services for cloud save (to move your progress between devices) and, where available, achievements and leaderboards. This service is provided by Google: your player profile (gamer name, avatar, player ID), cloud save, achievements and scores are stored by Google under its <a href="https://policies.google.com/privacy">privacy policy</a>. Your scores may be visible to other players depending on your Play Games visibility settings. Your email address is not shared with us. The whole game can be played without signing in.</p>
 
 <h2>3. Advertising</h2>
-<p>The game has no pop-up (interstitial) ads. It only shows rewarded ads that you choose to watch by tapping a button (e.g. double Embers after a match, shortening a chest timer), served by Google AdMob. AdMob may collect the advertising ID, device information, approximate location (from IP address), ad interactions and diagnostics. Players in the EEA, UK and Switzerland are asked for consent before ads are shown and can change their choice in <em>Settings → Ad privacy</em>. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses data</a>.</p>
+<p>The game has no pop-up (interstitial) ads. It only shows rewarded ads that you choose to watch by tapping a button (e.g. double Embers after a match, shortening a chest timer), served by Google AdMob. AdMob may collect the advertising ID, device information, approximate location (from IP address), ad interactions and diagnostics, and may share ad-related data with its advertising partners under Google's policies. Players in the EEA, UK and Switzerland are asked for consent before ads are shown and can change their choice in <em>Settings → Ad privacy</em>. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses data</a>.</p>
 
 <h2>4. In-app purchases</h2>
-<p>In-app purchases such as gem packs are processed by Google Play. We never see or store your payment details; the game only checks with Google Play that a purchase is valid and adds the item to your account. Purchases and refunds are subject to Google Play's terms.</p>
+<p>The game offers two kinds of optional purchases: <em>Ad-free</em> (permanent; ad rewards are given without watching ads) and gem packs. Payment is handled by Google Play; your card and payment details never reach us, and we cannot see or store them. The game only learns from Google Play that a purchase is valid and adds the item to your game; a purchase token is kept in the game's save on your device so the same purchase is never counted twice. Ad-free comes back with the same Google account when you reinstall or use a new device, automatically or via <em>Settings → About → Restore purchases</em>. Your purchase history is kept by Google Play; purchases and refunds are subject to <a href="https://support.google.com/googleplay/answer/2479637">Google Play's refund policy</a>.</p>
 
-<h2>5. Problem reports</h2>
+<h2>5. Notifications</h2>
+<p>The game can show two local notifications: "chest ready" and a daily reminder. You turn them on or off in <em>Settings → Notifications</em>; on Android 13 and later the system asks for notification permission when you first turn them on. They are scheduled on your device with Android's alarm service and are never sent from a server. The game also asks Android to run when the device starts so it can set these reminders again after a restart. No data leaves your device for this.</p>
+
+<h2>6. Problem reports</h2>
 <p>If the game crashes or freezes, a technical report (error log, Android version, device model) is saved on your device. It is shown to you the next time you open the game and is sent only if you tap <em>Share</em>, using an app you choose. Google Play may show the developer aggregated Android crash statistics that are not linked to your identity (Android vitals).</p>
 
-<h2>6. Permissions</h2>
-<p>The game uses internet access (for ads, Play Games and purchases), the advertising ID permission (for AdMob) and vibration (can be turned off in Settings). The game can be played offline; ad offers, cloud save and purchases are then unavailable.</p>
+<h2>7. Permissions</h2>
+<p>The game uses internet access (for ads, Play Games and purchases), the advertising ID permission (for AdMob), the notification permission (for the optional reminders), the permission to run at device start (to restore reminders) and vibration (can be turned off in Settings). The game can be played offline; ad offers, cloud save and purchases are then unavailable. Denying a permission only turns off the related feature.</p>
 
-<h2>7. Deleting your data</h2>
-<p>Game data on your device is deleted when you uninstall the game or clear its app data. You can delete your Play Games data (cloud save, achievements, scores) in the Google Play Games app settings or your Google account. You can reset or delete your advertising ID in Android settings. AET Studio stores no data about you; for questions, write to the address below.</p>
+<h2>8. Retention</h2>
+<div class="wrap"><table>
+<tr><th>Data</th><th>How long</th></tr>
+<tr><td>Progress and settings on your device</td><td>Until you uninstall the game or clear its data</td></tr>
+<tr><td>Play Games profile, cloud save, achievements, scores</td><td>Until you delete them; managed by Google</td></tr>
+<tr><td>Ad data</td><td>Managed by Google AdMob</td></tr>
+<tr><td>Purchase history</td><td>Managed by Google Play</td></tr>
+<tr><td>Data held by AET Studio</td><td>None</td></tr>
+</table></div>
 
-<h2>8. Children</h2>
+<h2>9. Deleting your data</h2>
+<p>Game data on your device is deleted when you uninstall the game or clear its app data (<em>Device Settings → Apps → AlcheMaze → Storage</em>). You can delete your Play Games data (cloud save, achievements, scores) in the Google Play Games app settings or your Google account. You can reset or delete your advertising ID in Android settings. AET Studio stores no data about you; for any request, write to the address below (we reply within 30 days).</p>
+
+<h2>10. Your rights</h2>
+<p><strong>European Economic Area, United Kingdom and Switzerland (GDPR):</strong> you have the right of access, rectification, erasure, restriction, data portability and objection, and the right to withdraw consent at any time (ads: <em>Settings → Ad privacy</em>). Because AET Studio holds no data about you, most of these rights are exercised with Google for the data it processes. You may also complain to your local data protection authority.</p>
+<p><strong>Türkiye (KVKK, Law No. 6698):</strong> the data controller is AET Studio, Istanbul, Türkiye. Under Article 11 you may ask whether your data is processed, request information, learn the purpose and the third parties it is transferred to, request correction or deletion, object to results of automated processing, and claim compensation for damage. Write to the address below; requests are answered within 30 days. You may complain to the Personal Data Protection Authority (KVKK).</p>
+<p><strong>California (CCPA):</strong> we do not sell your personal information. You have the right to know what is processed, to request deletion and not to be discriminated against for using these rights. Email us with the subject "CCPA Request"; we respond within 45 days.</p>
+
+<h2>11. Children</h2>
 <p>AlcheMaze is not directed at children under 13 and does not knowingly collect their data.</p>
 
-<h2>9. Changes</h2>
+<h2>12. Changes</h2>
 <p>When this policy changes (e.g. a new service is added), the updated version is published on this page with a new date.</p>
 
-<h2>10. Contact</h2>
-<p>Questions: <a href="mailto:aetstudioinfo@gmail.com">aetstudioinfo@gmail.com</a></p>
+<h2>13. Contact</h2>
+<p>AET Studio · Istanbul, Türkiye<br>Questions and requests: <a href="mailto:aetstudioinfo@gmail.com">aetstudioinfo@gmail.com</a></p>
+</section>
 
+<!-- ============================== TÜRKÇE ============================== -->
+<section class="lang" id="tr" lang="tr">
+<p class="meta">AET Studio · Son güncelleme: 25 Kasım 2026</p>
+<h1>AlcheMaze Gizlilik Politikası</h1>
+<p>Bu politika, AET Studio tarafından geliştirilen AlcheMaze: Merge Tower Defense (com.aetstudio.alchemaze) Android oyununun hangi verileri nasıl işlediğini açıklar. AET Studio'nun kendi sunucusu yoktur; oyun adınız, e-posta adresiniz gibi kişisel bilgileri toplamaz ve bize hiçbir oyun verisi göndermez. Oyunun kullandığı üçüncü taraf hizmetlerin tamamı Google'a aittir: isteğe bağlı ödüllü reklamlar için Google AdMob, isteğe bağlı giriş ve bulut kaydı için Google Play Games ve uygulama içi satın almalar için Google Play.</p>
+
+<div class="box"><strong>Kısaca:</strong> ilerlemeniz cihazınızda kalır. Hesap, kendi analizimiz ve takip yoktur. Reklamlar, giriş ve satın almalar Google tarafından işlenir.</div>
+
+<h2>Toplanan veriler (özet)</h2>
+<div class="wrap"><table>
+<tr><th>Veri</th><th>Ne için</th><th>Kim işler</th><th>Hukuki dayanak (GDPR)</th></tr>
+<tr><td>Oyun ilerlemesi ve ayarlar</td><td>Oyunun çalışması</td><td>Cihazınız (Play Games ile girişte Google bulut kaydı)</td><td>Sözleşme (oyunu sunmak)</td></tr>
+<tr><td>Play Games profili, bulut kaydı</td><td>İsteğe bağlı giriş ve cihazlar arası kayıt</td><td>Google Play Games</td><td>Rıza (girişi siz seçersiniz)</td></tr>
+<tr><td>Reklam kimliği, cihaz bilgileri, yaklaşık konum</td><td>İsteğe bağlı ödüllü reklamlar</td><td>Google AdMob</td><td>Rıza (AEA, Birleşik Krallık, İsviçre: reklamdan önce sorulur)</td></tr>
+<tr><td>Satın alma geçmişi</td><td>Reklamsız ve Elmas satın alımları</td><td>Google Play</td><td>Sözleşme</td></tr>
+<tr><td>Hatırlatma ayarları</td><td>İsteğe bağlı bildirimler</td><td>Yalnız cihazınız</td><td>Rıza (bildirim izni)</td></tr>
+<tr><td>Sorun raporu</td><td>Yalnız siz paylaşırsanız hata düzeltme</td><td>Cihazınız</td><td>Rıza (Paylaş'a dokunursunuz)</td></tr>
+</table></div>
+<p>Adınızı, e-posta adresinizi, kişilerinizi, fotoğraflarınızı, kesin konumunuzu veya ödeme bilgilerinizi toplamayız ve kişisel verilerinizi satmayız.</p>
+
+<h2>1. Cihazınızda saklanan veriler</h2>
+<p>Oyun ilerlemeniz (açılan haritalar ve yıldızlar, Kor, Altın, Elmas, yetenek ağacı, kartlar, sandıklar, ayarlar) cihazınızda, oyunun kendi depolama alanında saklanır. Google Play Games ile giriş yaparsanız ilerlemenizin bir kopyası Google'ın bulut kaydında da tutulur (bkz. 2). Cihazınızda Android'in otomatik yedeklemesi açıksa bu veriler Android tarafından Google hesabınıza yedeklenebilir; bu Google'ın hizmetidir ve AET Studio bu yedeğe erişemez.</p>
+
+<h2>2. Google Play Games (isteğe bağlı)</h2>
+<p>Google Play Games ile giriş yaparsanız oyun, ilerlemenizi cihazlar arasında taşımak için bulut kaydını ve varsa başarımlar ile skor tablolarını Google Play Games Hizmetleri üzerinden kullanır. Bu hizmet Google tarafından sağlanır: oyuncu profiliniz (oyuncu adı, avatar, oyuncu kimliği), bulut kaydınız, başarımlarınız ve skorlarınız Google'da saklanır ve Google'ın <a href="https://policies.google.com/privacy">gizlilik politikasına</a> tabidir. Skorlarınız, Play Games görünürlük ayarlarınıza göre diğer oyunculara görünebilir. E-posta adresiniz bizimle paylaşılmaz. Giriş yapmadan da oyunun tamamı oynanabilir.</p>
+
+<h2>3. Reklamlar</h2>
+<p>Oyunda açılır (ara) reklam yoktur. Yalnızca sizin bir butona dokunarak seçtiğiniz anda izlenen ödüllü reklamlar vardır (ör. maç sonu Kor x2, sandık süresini kısaltma) ve bunlar Google AdMob aracılığıyla gösterilir. AdMob reklam kimliği, cihaz bilgileri, yaklaşık konum (IP adresinden), reklam etkileşimleri ve teşhis verilerini toplayabilir ve reklamla ilgili verileri Google'ın politikaları çerçevesinde reklam ortaklarıyla paylaşabilir. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki oyunculardan reklam göstermeden önce izin istenir; tercihinizi <em>Ayarlar → Reklam gizliliği</em> bölümünden değiştirebilirsiniz. Ayrıntılar: <a href="https://policies.google.com/technologies/partner-sites">Google'ın verileri nasıl kullandığı</a>.</p>
+
+<h2>4. Uygulama içi satın almalar</h2>
+<p>Oyunda isteğe bağlı iki tür satın alma vardır: <em>Reklamsız</em> (kalıcı; reklamlı ödüller reklam izlemeden verilir) ve Elmas paketleri. Ödemeyi Google Play işler; kart ve ödeme bilgileriniz bize hiç gelmez, onları göremeyiz ve saklamayız. Oyun yalnızca Google Play'den satın alımın geçerli olduğunu öğrenir ve ürünü oyununuza ekler; aynı satın alma iki kez sayılmasın diye satın alma jetonu cihazınızdaki oyun kaydında tutulur. Reklamsız, oyunu yeniden kurduğunuzda ya da yeni bir cihazda aynı Google hesabıyla otomatik veya <em>Ayarlar → Hakkında → Satın alımları geri yükle</em> ile geri gelir. Satın alma geçmişiniz Google Play'de tutulur; satın almalar ve iadeler <a href="https://support.google.com/googleplay/answer/2479637">Google Play'in iade politikasına</a> tabidir.</p>
+
+<h2>5. Bildirimler</h2>
+<p>Oyun iki yerel bildirim gösterebilir: "sandık hazır" ve günlük hatırlatma. Bunları <em>Ayarlar → Bildirimler</em> bölümünden açıp kapatırsınız; Android 13 ve sonrasında ilk açışınızda sistem bildirim izni ister. Bildirimler cihazınızda Android'in alarm hizmetiyle kurulur, hiçbir sunucudan gönderilmez. Oyun ayrıca, cihaz yeniden başladıktan sonra bu hatırlatmaları yeniden kurabilmek için Android'den açılışta çalışmayı ister. Bunun için cihazınızdan hiçbir veri çıkmaz.</p>
+
+<h2>6. Sorun raporları</h2>
+<p>Oyun çöker veya donarsa teknik bir rapor (hata kaydı, Android sürümü, cihaz modeli) cihazınıza kaydedilir. Rapor bir sonraki açılışta size gösterilir ve yalnızca siz <em>Paylaş</em>'a dokunursanız, seçtiğiniz uygulamayla gönderilir. Google Play, Android'in çökme istatistiklerini kimliğinizle ilişkilendirmeden geliştiriciye toplu olarak gösterebilir (Android vitals).</p>
+
+<h2>7. İzinler</h2>
+<p>Oyun internet erişimini (reklamlar, Play Games ve satın almalar için), reklam kimliği iznini (AdMob için), bildirim iznini (isteğe bağlı hatırlatmalar için), cihaz açılışında çalışma iznini (hatırlatmaları yeniden kurmak için) ve titreşim iznini (Ayarlar'dan kapatılabilir) kullanır. Oyun internetsiz de oynanabilir; o zaman reklam teklifleri, bulut kaydı ve satın almalar kullanılamaz. Bir izni vermemeniz yalnızca ilgili özelliği kapatır.</p>
+
+<h2>8. Saklama süreleri</h2>
+<div class="wrap"><table>
+<tr><th>Veri</th><th>Ne kadar</th></tr>
+<tr><td>Cihazdaki ilerleme ve ayarlar</td><td>Oyunu kaldırana veya verilerini temizleyene kadar</td></tr>
+<tr><td>Play Games profili, bulut kaydı, başarımlar, skorlar</td><td>Siz silene kadar; Google tarafından yönetilir</td></tr>
+<tr><td>Reklam verileri</td><td>Google AdMob tarafından yönetilir</td></tr>
+<tr><td>Satın alma geçmişi</td><td>Google Play tarafından yönetilir</td></tr>
+<tr><td>AET Studio'nun elinde tuttuğu veri</td><td>Yok</td></tr>
+</table></div>
+
+<h2>9. Verilerinizi silme</h2>
+<p>Cihazdaki oyun verileri oyunu kaldırdığınızda veya uygulama verilerini temizlediğinizde silinir (<em>Cihaz Ayarları → Uygulamalar → AlcheMaze → Depolama</em>). Play Games verilerinizi (bulut kaydı, başarımlar, skorlar) Google Play Games uygulamasının ayarlarından veya Google hesabınızdan silebilirsiniz. Reklam kimliğinizi Android ayarlarından sıfırlayabilir veya silebilirsiniz. AET Studio sizinle ilgili hiçbir veri saklamaz; her türlü talep için aşağıdaki adrese yazabilirsiniz (30 gün içinde yanıt veririz).</p>
+
+<h2>10. Haklarınız</h2>
+<p><strong>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre (GDPR):</strong> erişim, düzeltme, silme, kısıtlama, taşınabilirlik ve itiraz haklarına, ayrıca rızanızı istediğiniz zaman geri alma hakkına sahipsiniz (reklamlar: <em>Ayarlar → Reklam gizliliği</em>). AET Studio sizinle ilgili veri tutmadığı için bu hakların çoğunu Google'ın işlediği veriler için Google'a karşı kullanırsınız. Yerel veri koruma kurumuna şikâyet hakkınız da vardır.</p>
+<p><strong>Türkiye (KVKK, 6698 sayılı Kanun):</strong> veri sorumlusu AET Studio, İstanbul, Türkiye'dir. Madde 11 kapsamında verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, işleme amacını ve aktarıldığı üçüncü kişileri öğrenme, düzeltme veya silme isteme, otomatik işlemlerin sonucuna itiraz etme ve zararın giderilmesini talep etme haklarına sahipsiniz. Aşağıdaki adrese yazın; talepler 30 gün içinde yanıtlanır. Kişisel Verileri Koruma Kurumu'na şikâyet hakkınız saklıdır.</p>
+<p><strong>Kaliforniya (CCPA):</strong> kişisel verilerinizi satmıyoruz. Hangi verilerin işlendiğini öğrenme, silinmesini isteme ve bu hakları kullandığınız için ayrımcılığa uğramama haklarına sahipsiniz. "CCPA Talebi" konusuyla yazın; 45 gün içinde yanıt veririz.</p>
+
+<h2>11. Çocuklar</h2>
+<p>AlcheMaze 13 yaşın altındaki çocuklara yönelik değildir ve bilerek onlardan veri toplamaz.</p>
+
+<h2>12. Değişiklikler</h2>
+<p>Bu politika değiştiğinde (ör. yeni bir hizmet eklendiğinde) güncel hali bu sayfada yayınlanır ve tarih güncellenir.</p>
+
+<h2>13. İletişim</h2>
+<p>AET Studio · İstanbul, Türkiye<br>Sorular ve talepler: <a href="mailto:aetstudioinfo@gmail.com">aetstudioinfo@gmail.com</a></p>
+</section>
+
+<footer>© 2026 AET Studio</footer>
+</main>
+<script>
+(function(){
+  function show(l){
+    document.getElementById('en').classList.toggle('on',l==='en');
+    document.getElementById('tr').classList.toggle('on',l==='tr');
+    document.getElementById('b-en').setAttribute('aria-pressed',l==='en');
+    document.getElementById('b-tr').setAttribute('aria-pressed',l==='tr');
+    document.documentElement.lang=l;
+  }
+  var h=(location.hash||'').replace('#','');
+  var l=(h==='tr'||h==='en')?h:((navigator.language||'').toLowerCase().indexOf('tr')===0?'tr':'en');
+  show(l);
+  document.getElementById('b-en').onclick=function(){show('en');window.scrollTo(0,0);};
+  document.getElementById('b-tr').onclick=function(){show('tr');window.scrollTo(0,0);};
+})();
+</script>
 </body></html>
